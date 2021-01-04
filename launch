@@ -1,2 +1,5 @@
-#!/bin/sh
-sudo podman run --name arcgis --detach ubuntu:focal sleep 999999
+#!/bin/bash
+echo maybe deleting old
+sudo podman rm -f arcgis &>/dev/null || :
+echo starting new
+sudo podman run --name arcgis --detach -p 5901:5901 arcgis-xfce:latest

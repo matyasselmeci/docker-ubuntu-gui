@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo podman build -t ubuntu-unminimized:latest -f ubuntu-unminimized.dockerfile . </dev/null

@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo podman build -t arcgis-xfce:latest -f xfce.dockerfile . </dev/null
