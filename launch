@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo podman run --name arcgis --detach ubuntu:focal sleep 999999
