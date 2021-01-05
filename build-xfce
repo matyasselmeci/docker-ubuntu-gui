@@ -1,2 +1,0 @@
-#!/bin/sh
-docker build -t ubuntu-gui-xfce:latest -f xfce.dockerfile . </dev/null

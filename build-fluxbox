@@ -1,2 +1,0 @@
-#!/bin/sh
-docker build -t ubuntu-gui-fluxbox:latest -f fluxbox.dockerfile . </dev/null

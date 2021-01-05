@@ -1,2 +1,0 @@
-#!/bin/sh
-docker build -t ubuntu-unminimized:latest -f ubuntu-unminimized.dockerfile . </dev/null

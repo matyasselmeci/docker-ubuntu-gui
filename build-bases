@@ -1,5 +1,0 @@
-#!/bin/bash
-set -e
-./build-ubuntu-unminimized
-docker build -t ubuntu-gui-fluxbox-base:latest -f fluxbox-base.dockerfile . </dev/null
-docker build -t ubuntu-gui-xfce-base:latest -f xfce-base.dockerfile . </dev/null
