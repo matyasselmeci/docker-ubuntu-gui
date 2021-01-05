@@ -2,4 +2,4 @@
 echo maybe deleting old
 docker rm -f ubuntu-gui &>/dev/null || :
 echo starting new
-docker run --name ubuntu-gui --detach -p 5901:5901 ubuntu-gui-xfce:latest
+docker run --name ubuntu-gui --detach -p 5901:5901 ubuntu-gui:latest

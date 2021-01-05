@@ -1,0 +1,2 @@
+#!/bin/sh
+docker build -t ubuntu-gui:latest -f Dockerfile . </dev/null
