@@ -8,7 +8,7 @@ fail () {
 }
 
 export DISPLAY=:1
-Xvfb $DISPLAY -screen 0 1024x768x16 &
+Xvfb $DISPLAY -screen 0 1366x768x16 &
 sleep 1
 x11vnc -nopw -display $DISPLAY -N -forever &
 #x11vnc -passwd TestVNC -display $DISPLAY -N -forever &
