@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo podman build -t arcgis-lxde:latest -f lxde.dockerfile . </dev/null
