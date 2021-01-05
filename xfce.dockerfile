@@ -21,4 +21,12 @@ RUN : \
 USER user
 WORKDIR /home/user
 
+# Make a desktop shortcut to a text editor; give it a more obvious name than "Mousepad"
+RUN mkdir -p /home/user/Desktop
+RUN : \
+&& cp /usr/share/applications/mousepad.desktop /home/user/Desktop/"Text Editor.desktop" \
+&& sed -i -e 's/Name=.*/Name=Text Editor/' /home/user/Desktop/"Text Editor.desktop" \
+&& chmod 0755 /home/user/Desktop/"Text Editor.desktop" \
+&& :
+
 CMD bash /start.sh
