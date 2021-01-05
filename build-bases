@@ -1,6 +1,5 @@
 #!/bin/bash
-./build-ubuntu-unminimized && \
-    sudo podman build -t arcgis-fluxbox-base:latest -f fluxbox-base.dockerfile . </dev/null && \
-    sudo podman build -t arcgis-lxde-base:latest -f lxde-base.dockerfile . </dev/null
-    sudo podman build -t arcgis-xfce-base:latest -f xfce-base.dockerfile . </dev/null
-
+set -e
+./build-ubuntu-unminimized
+docker build -t ubuntu-gui-fluxbox-base:latest -f fluxbox-base.dockerfile . </dev/null
+docker build -t ubuntu-gui-xfce-base:latest -f xfce-base.dockerfile . </dev/null

@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo podman build -t arcgis-fluxbox:latest -f fluxbox.dockerfile . </dev/null
+docker build -t ubuntu-gui-fluxbox:latest -f fluxbox.dockerfile . </dev/null

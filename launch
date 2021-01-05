@@ -1,5 +1,5 @@
 #!/bin/bash
 echo maybe deleting old
-sudo podman rm -f arcgis &>/dev/null || :
+docker rm -f ubuntu-gui &>/dev/null || :
 echo starting new
-sudo podman run --name arcgis --detach -p 5901:5901 arcgis-xfce:latest
+docker run --name ubuntu-gui --detach -p 5901:5901 ubuntu-gui-xfce:latest
